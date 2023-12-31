@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite" parallel="methods" thread-count="2">
+  <test name="SignUpTests">
+    <classes>
+      <class name="PageExecution.ParallelExecution">
+        <methods>
+          <include name="testcase1" />
+          <include name="testcase2" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
