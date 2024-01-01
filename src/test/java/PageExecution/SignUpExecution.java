@@ -105,7 +105,7 @@ public class SignUpExecution extends Utility{
 		BaseClass.getWebElementByXpath(rl.signUp).click();
 		BaseClass.getWebElementByXpath(rl.fullName).sendKeys(BaseClass.readProperty("validFullName"));
 		BaseClass.getWebElementByXpath(rl.emaiId).sendKeys(BaseClass.readProperty("validEmail"));
-		if(!BaseClass.getWebElementByXpath(rl.createAccount).isSelected()) {
+		if(!BaseClass.getWebElementByXpath(rl.checkBox).isSelected()) {
 			System.out.println("Testcase5 - Passed ");
 		}
 		else {
